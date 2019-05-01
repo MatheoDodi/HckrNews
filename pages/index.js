@@ -1,6 +1,7 @@
 import Error from 'next/error';
 import fetch from 'isomorphic-fetch';
 import StoryList from '../components/StoryList';
+import Layout from '../components/Layout';
 
 class Index extends React.Component {
   static async getInitialProps() {
@@ -25,10 +26,12 @@ class Index extends React.Component {
       return <Error statusCode={503} />;
     }
     return (
-      <div>
-        <h1>Hckr News</h1>
+      <Layout
+        title="Hckr News"
+        description="A Hacker News clone made with NextJS"
+      >
         <StoryList stories={stories} />
-      </div>
+      </Layout>
     );
   }
 }
