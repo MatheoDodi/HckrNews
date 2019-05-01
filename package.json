@@ -1,0 +1,24 @@
+{
+  "name": "hckrnews",
+  "version": "1.0.0",
+  "description": "[![LinkedIn][linkedin-shield]][linkedin-url]",
+  "main": "server.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewDodi/HckrNews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewDodi/HckrNews/issues"
+  },
+  "homepage": "https://github.com/MatthewDodi/HckrNews#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
