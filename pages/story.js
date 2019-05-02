@@ -59,6 +59,21 @@ class Story extends React.Component {
           .story-title a:hover {
             text-decoration: underline;
           }
+
+          .story-details {
+            font-size: 0.8rem;
+            padding-bottom: 1em;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            margin-bottom: 1em;
+          }
+
+          .story-details strong {
+            margin-right: 1em;
+          }
+
+          .story-details a {
+            color: #f60;
+          }
         `}</style>
       </Layout>
     );
