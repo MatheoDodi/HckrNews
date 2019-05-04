@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import { withRouter } from 'next/router';
+import Router from 'next/router';
 
 const Layout = ({ children, title, description, backButton, router }) => (
   <div>
@@ -16,7 +16,7 @@ const Layout = ({ children, title, description, backButton, router }) => (
           </a>
         </Link>
         {backButton && (
-          <button className="back-button" onClick={() => router.back()}>
+          <button className="back-button" onClick={() => Router.back()}>
             Go Back
           </button>
         )}
@@ -87,4 +87,4 @@ const Layout = ({ children, title, description, backButton, router }) => (
   </div>
 );
 
-export default withRouter(Layout);
+export default Layout;
