@@ -1,7 +1,7 @@
 import CommentList from './CommentList';
 
 export default ({ comment }) => (
-  <li>
+  <li className="comment">
     <div className="date-author">
       <span className="author link">{comment.user}</span>{' '}
       <span className="date link">{comment.time_ago}</span>
@@ -18,6 +18,7 @@ export default ({ comment }) => (
       }
 
       .author {
+        color: #f60;
         font-size: 0.9em;
         font-weight: bold;
       }

@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import { withRouter } from 'next/router';
 
-const Layout = ({ children, title, description }) => (
+const Layout = ({ children, title, description, backButton, router }) => (
   <div>
     <Head>
       <meta name="description" content={description} />
@@ -14,6 +15,11 @@ const Layout = ({ children, title, description }) => (
             <span className="main-title">Hckr News</span>
           </a>
         </Link>
+        {backButton && (
+          <button className="back-button" onClick={() => router.back()}>
+            Go Back
+          </button>
+        )}
       </nav>
 
       {children}
@@ -23,9 +29,9 @@ const Layout = ({ children, title, description }) => (
       .container {
         border-radius: 7px 7px 0 0;
         max-width: 60%;
-        margin: 1rem auto;
+        margin: 2rem auto;
         background: #fff;
-        box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.18);
+        box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.25);
       }
 
       nav {
@@ -33,11 +39,14 @@ const Layout = ({ children, title, description }) => (
         background: white;
         padding: 3rem;
         font-size: 2rem;
+        border-bottom: 5px #f60 solid;
+        position: relative;
+        display: flex;
       }
 
       nav > * {
         display: inline-block;
-        color: black;
+        color: white;
       }
 
       nav a {
@@ -47,6 +56,26 @@ const Layout = ({ children, title, description }) => (
       nav .main-title {
         font-weight: bold;
         color: #f60;
+      }
+
+      nav .main-title:hover {
+        color: #ff8800;
+      }
+
+      .back-button {
+        margin-left: auto;
+        background: #f60;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 3px;
+        font-size: 1rem;
+        box-shadow: 0 0 10px 2px rgba(255, 119, 0, 0);
+        transition: all 0.3s;
+      }
+
+      .back-button:hover {
+        box-shadow: 0 0 10px rgba(255, 119, 0, 0.75);
+        cursor: pointer;
       }
     `}</style>
     <style global jsx>{`
@@ -58,4 +87,4 @@ const Layout = ({ children, title, description }) => (
   </div>
 );
 
-export default Layout;
+export default withRouter(Layout);
