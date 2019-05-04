@@ -35,9 +35,11 @@ class Story extends React.Component {
             <a href={story.url}>{story.title}</a>
           </h1>
           <div className="story-details">
-            <strong>{story.points} points</strong>
-            <strong>{story.comments_count} comments</strong>
-            <strong>{story.time_ago}</strong>
+            <strong className="story-points">{story.points} points</strong>
+            <strong className="story-comments">
+              {story.comments_count} comments
+            </strong>
+            <strong className="story-time">{story.time_ago}</strong>
           </div>
           <CommentList comments={story.comments} />
         </main>
@@ -47,7 +49,8 @@ class Story extends React.Component {
           }
 
           .story-title {
-            font-size: 1.2em;
+            color: #444;
+            font-size: 1.3em;
             margin: 0;
             font-weight: 300;
             padding-bottom: 0.5em;
@@ -64,9 +67,10 @@ class Story extends React.Component {
 
           .story-details {
             font-size: 0.8rem;
-            padding-bottom: 1em;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            padding-bottom: 3rem;
             margin-bottom: 1em;
+            display: flex;
+            align-items: center;
           }
 
           .story-details strong {
@@ -74,7 +78,22 @@ class Story extends React.Component {
           }
 
           .story-details a {
-            color: #f60;
+            color: #f70;
+          }
+
+          .story-points {
+            color: #f70;
+            font-size: 0.7rem;
+          }
+
+          .story-comments {
+            color: #7b8794;
+            font-weight: 100;
+          }
+
+          .story-time {
+            margin-left: auto;
+            color: #7b8794;
           }
         `}</style>
       </Layout>

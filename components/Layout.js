@@ -21,14 +21,18 @@ const Layout = ({ children, title, description }) => (
 
     <style jsx>{`
       .container {
-        max-width: 85%;
-        margin: 0 auto;
-        background: #f6f6ef;
+        border-radius: 7px 7px 0 0;
+        max-width: 60%;
+        margin: 1rem auto;
+        background: #fff;
+        box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.18);
       }
 
       nav {
-        background: #f60;
-        padding: 1em;
+        border-radius: 7px 7px 0 0;
+        background: white;
+        padding: 3rem;
+        font-size: 2rem;
       }
 
       nav > * {
@@ -42,11 +46,12 @@ const Layout = ({ children, title, description }) => (
 
       nav .main-title {
         font-weight: bold;
+        color: #f60;
       }
     `}</style>
     <style global jsx>{`
       body {
-        background: white;
+        background: linear-gradient(to bottom, #ff6600, #ff4400);
         font-family: Verdana, Geneva, sans-serif;
       }
     `}</style>

@@ -17,8 +17,8 @@ class Index extends React.Component {
         `https://node-hnapi.herokuapp.com/news?page=${query.page || 1}`
       );
       stories = await res.json();
+      console.log(stories);
     } catch (err) {
-      console.log(err);
       stories = [];
     }
 
@@ -49,18 +49,20 @@ class Index extends React.Component {
                 }))
               }
             >
-              Next Page ({currentPage + 1})
+              Next Page
             </a>
           </Link>
         </footer>
         <style jsx>{`
           footer {
-            padding: 1em;
+            padding: 2rem 3rem;
+            background: #f70;
+            font-size: 1.2rem;
           }
 
           footer a {
-            font-weight: bold;
-            color: black;
+            font-weight: 100;
+            color: white;
             text-decoration: none;
           }
 
