@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="https://seeklogo.com/images/N/next-js-logo-7929BCD36F-seeklogo.com.png" alt="NextJS Logo" width="100">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/31yVXthEjbL._SY355_.png" alt="Hacker News Logo" width="100">
 
   <h3 align="center">HckrNews</h3>
 </p>
