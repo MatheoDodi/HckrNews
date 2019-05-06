@@ -71,7 +71,10 @@ Contributions are what make the open source community such an amazing place to b
 
 ## What Did I Learn
 
-- Next
+- Nextjs
+- GetInitialProps
+- Hosting on NOW (zeit)
+- Registering a service worker
 
 <!-- CONTACT -->
 
@@ -79,7 +82,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Matthew Dodi - [in/MatthewDodi](https://linkedin.com/in/MatthewDodi) - matthew.dodi@gmail.com
 
-Project Link: [https://github.com/MatthewDodi/HckrNews.git](https://github.com/MatthewDodi/HckrNews.git)
+Project Link: [https://hckrnews.matthewdodi.now.sh/](https://hckrnews.matthewdodi.now.sh/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
