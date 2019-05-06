@@ -17,7 +17,6 @@ class Index extends React.Component {
         `https://node-hnapi.herokuapp.com/news?page=${query.page || 1}`
       );
       stories = await res.json();
-      console.log(stories);
     } catch (err) {
       stories = [];
     }

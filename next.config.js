@@ -1,6 +1,7 @@
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
+  target: 'serverless',
   webpack: config => {
     config.plugins.push(
       new SWPrecacheWebpackPlugin({

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Router from 'next/router';
 
-const Layout = ({ children, title, description, backButton, router }) => (
+const Layout = ({ children, title, description, backButton }) => (
   <div>
     <Head>
       <meta name="description" content={description} />
