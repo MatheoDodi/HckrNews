@@ -76,6 +76,8 @@ Contributions are what make the open source community such an amazing place to b
 - Hosting on NOW (zeit)
 - Registering a service worker
 
+TODO: Add animation on hover
+
 <!-- CONTACT -->
 
 ## Contact
